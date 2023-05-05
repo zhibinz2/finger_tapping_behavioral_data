@@ -6,7 +6,7 @@ for ses=1:12
     load(['clean_' num2str(seeds(ses)) '.mat'])
     for tr=1:12
         dataL_bpchan=dataL{1,tr}(:,33);
-        dataL_bpchan=dataR{1,tr}(:,33);
+        dataR_bpchan=dataR{1,tr}(:,33);
     end
     clear dataL dataR tr i
     save(['clean_' num2str(seeds(ses)) '_bpchan.mat']);
