@@ -17,7 +17,7 @@ Variables in each mat file:
  
  * conditions   --- the sequence of the conditions in 12 trials (1 - Uncouple; 2 - L_lead; 3 - R_lead; 4 - Mutual)
  
- * dataL_bpchan   --- the extracted channel 33 (in matlab) of the button press signal, with 32 channels of EEG removed in order to shrink the file size for sharing. (But only the last trial was saved due to an error in loop of Extract_tapping_data.m, It was now fixed in the folder "revisited")
+ * dataL_bpchan   --- the extracted channel 33 (in matlab) of the button press signal, with 32 channels of EEG removed in order to shrink the file size for sharing. (But only the last trial was saved due to an error in loop of Extract_tapping_data.m, It was now fixed in the folder "revisited"). It contains unmatched bad taps that were removed afterwards. So disregard this variable and "dataR_bpchan", as it was not usable data.
  
  * dataR_bpchan   --- same as above, but from the Right Player
  
